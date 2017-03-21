@@ -20,7 +20,11 @@
  * isObjectLike(null)
  * // => false
  */
+
+//是否为类对象函数
 function isObjectLike(value) {
+  //传入的参数不等于null 传入的类型是object
+  //null会被typeOf解析为object
   return value != null && typeof value == 'object'
 }
 

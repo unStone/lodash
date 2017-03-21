@@ -17,8 +17,9 @@ import isObjectLike from './isObjectLike.js'
  * // => false
  */
 
-//是否为布尔值
+//是否为布尔值函数
 function isBoolean(value) {
+  // 判断传入的参数是否为布尔值 true或false。
   return value === true || value === false ||
     (isObjectLike(value) && baseGetTag(value) == '[object Boolean]')
 }
